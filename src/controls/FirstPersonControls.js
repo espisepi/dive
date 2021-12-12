@@ -369,6 +369,10 @@ function onKeyDown( event ) {
 				this.owner.reload();
 				break;
 
+			case 32: // backspace
+				this.owner.shoot();
+				break;
+				
 			case 49: // 1
 				this.owner.changeWeapon( WEAPON_TYPES_BLASTER );
 				break;
